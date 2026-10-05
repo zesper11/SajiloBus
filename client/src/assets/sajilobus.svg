@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 0 720 220" fill="none">
+  <!-- Transparent background -->
+  <g>
+    <!-- Orange rounded-square mark -->
+    <rect x="20" y="20" width="180" height="180" rx="42" fill="#FF9D00"/>
+
+    <!-- Bus -->
+    <path d="M58 82C58 64.327 72.327 50 90 50H130C147.673 50 162 64.327 162 82V155C162 163.837 154.837 171 146 171H74C65.163 171 58 163.837 58 155V82Z" fill="#F2EFEB"/>
+
+    <!-- Roof bar -->
+    <rect x="70" y="64" width="80" height="11" rx="5.5" fill="#FF9D00"/>
+
+    <!-- Windshield -->
+    <rect x="64" y="82" width="92" height="49" rx="8" fill="#FF9D00"/>
+
+    <!-- Headlights -->
+    <circle cx="75" cy="145" r="7" fill="#FF9D00"/>
+    <circle cx="145" cy="145" r="7" fill="#FF9D00"/>
+
+    <!-- Lower wheel/bumper shapes -->
+    <rect x="69" y="153" width="13" height="22" rx="6.5" fill="#F2EFEB"/>
+    <rect x="138" y="153" width="13" height="22" rx="6.5" fill="#F2EFEB"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="224" y="137"
+        fill="#2D2D2D"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="48"
+        font-weight="700"
+        letter-spacing="-1.2">SajiloBus</text>
+</svg>

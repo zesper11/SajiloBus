@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #F2EFEB;
+  --secondary: #383737;
+  --accent: #FF9D00;
+  --background: #1E1E1E;
+  --black: #0C0C0C;
+
+  --accent-hover: #FFB13B;
+  --border: #4A4A4A;
+}
+
+.primary-btn {
+  position: relative;
+  background-color: var(--background);
+  color: #f2efeb;
+  padding: 7px 16px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--black);
+  border-radius: inherit;
+  z-index: -1;
+  transform: scaley(1);
+  transition: transform 0.3s ease;
+}
+
+.primary-btn:hover::before {
+  transform: scaleX(1.08);
+}
+
+body{
+  padding: 1rem 130px;
+  
+}
