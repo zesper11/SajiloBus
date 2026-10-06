@@ -1,6 +1,14 @@
-import { MapContainer, TileLayer, Marker, Polyline } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Polyline,
+  Tooltip,
+  CircleMarker,
+} from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { useEffect, useState } from "react";
+import { map, marker } from "leaflet";
 
 //leaflet handels Basic map but it cannot Create path following the road for that OSRM is used.
 
@@ -50,10 +58,21 @@ function Map() {
 
         {/* Planned route points */}
         {routePoints.map((point) => (
-          <Marker
+          <CircleMarker
             key={point.name}
-            position={[point.coordinates[1], point.coordinates[0]]}
-          />
+            center={[point.coordinates[1], point.coordinates[0]]}
+            radius={10}
+            pathOptions={{
+              color: "#2563eb",
+              fillColor: "#2563eb",
+              fillOpacity: 1,
+              weight: 2,
+            }}
+          >
+            <Tooltip permanent direction="top">
+              {point.name}
+            </Tooltip>
+          </CircleMarker>
         ))}
 
         {/* Actual road-following route */}
