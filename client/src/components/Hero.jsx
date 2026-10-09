@@ -3,9 +3,9 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="flex flex-1 flex-col items-center justify-center gap-8 md:flex-row md:gap-1">
-      <div className="flex w-full flex-col justify-center gap-3 pr-1 md:w-1/3">
-        <h1 className="text-3xl font-medium">
+    <section className="hero-section">
+      <div className="hero-copy">
+        <h1>
           Your daily commute, made simple.
         </h1>
         <p>
@@ -18,9 +18,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="flex w-full justify-center md:w-2/3">
-        <img src={assets.HeroBus} className="h-auto w-full" alt="hero bus" />
-      </div>
+      <img src={assets.HeroBus} className="hero-image" alt="SajiloBus on the road" />
     </section>
   );
 };

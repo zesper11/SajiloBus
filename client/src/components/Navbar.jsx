@@ -4,26 +4,28 @@ import { ArrowRight } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <header className="shrink-0">
-      <nav className="flex w-full items-center justify-between">
-        <img src={assets.PngLogoWithText} className="h-20" alt="SajiloBus" />
-        <ul className="flex gap-4">
+    <header className="site-header">
+      <nav className="site-nav" aria-label="Main navigation">
+        <a href="#" aria-label="SajiloBus home">
+          <img src={assets.PngLogoWithText} className="brand-logo" alt="SajiloBus" />
+        </a>
+        <ul className="nav-links">
           <li>
-            <a href="#">About Us</a>
+            <a href="#features">About Us</a>
           </li>
           <li>
-            <a href="#">Login</a>
+            <a href="#routeFinder">How it works</a>
           </li>
           <li>
-            <a href="#">Signup</a>
+            <a href="#routeFinder">Plans</a>
           </li>
           <li>
-            <a href="#">How it works</a>
+            <a href="#login">Login</a>
           </li>
         </ul>
-        <button className="primary-btn">
+        <a className="primary-btn" href="#routeFinder">
           Find a Route <ArrowRight />
-        </button>
+        </a>
       </nav>
     </header>
   );

@@ -26,22 +26,16 @@ const RouteFinder = () => {
     <form
       id="routeFinder"
       onSubmit={handleSubmit}
-      className="flex w-full items-end gap-4 rounded-2xl border border-[#4A4A4A]/20 bg-[#fd8c24] pt-6 px-6 pb-8"
+      className="route-finder"
     >
-      <div className="flex flex-1 flex-col gap-2">
-        <label
-          htmlFor="pickup"
-          className="text-left text-sm font-medium text-[#383737]"
-        >
-          Pickup Location
-        </label>
+      <div className="route-field">
+        <label htmlFor="pickup">Pickup Location</label>
 
         <select
           id="pickup"
           name="pickupLocation"
           value={formData.pickupLocation}
           onChange={handelFormChange}
-          className="h-11 w-full rounded-lg border border-[#4A4A4A]/30 bg-white px-3 text-sm text-[#383737] outline-none transition focus:border-[#FF9D00]"
         >
           <option value="" disabled>
             Select pickup Location
@@ -52,20 +46,14 @@ const RouteFinder = () => {
         </select>
       </div>
 
-      <div className="flex flex-1 flex-col gap-2">
-        <label
-          htmlFor="drop"
-          className="text-left text-sm font-medium text-[#383737]"
-        >
-          Drop Location
-        </label>
+      <div className="route-field">
+        <label htmlFor="drop">Drop Location</label>
 
         <select
           id="drop"
           name="dropLocation"
           value={formData.dropLocation}
           onChange={handelFormChange}
-          className="h-11 w-full rounded-lg border border-[#4A4A4A]/30 bg-white px-3 text-sm text-[#383737] outline-none transition focus:border-[#FF9D00]"
         >
           <option value="" disabled>
             Select drop Location
@@ -76,13 +64,8 @@ const RouteFinder = () => {
         </select>
       </div>
 
-      <div className="flex flex-col gap-2">
-        <label
-          htmlFor="pickupTime"
-          className="text-left text-sm font-medium text-[#383737]"
-        >
-          Pickup time
-        </label>
+      <div className="route-field">
+        <label htmlFor="pickupTime">Pickup time</label>
 
         <input
           type="time"
@@ -90,17 +73,11 @@ const RouteFinder = () => {
           name="pickupTime"
           value={formData.pickupTime}
           onChange={handelFormChange}
-          className="h-11 rounded-lg border border-[#4A4A4A]/30 bg-white px-3 text-sm text-[#383737] outline-none transition focus:border-[#FF9D00]"
         />
       </div>
 
-      <div className="flex flex-col gap-2">
-        <label
-          htmlFor="dropTime"
-          className="text-left text-sm font-medium text-[#383737]"
-        >
-          Drop time
-        </label>
+      <div className="route-field">
+        <label htmlFor="dropTime">Drop time</label>
 
         <input
           type="time"
@@ -108,7 +85,6 @@ const RouteFinder = () => {
           name="dropTime"
           value={formData.dropTime}
           onChange={handelFormChange}
-          className="h-11 rounded-lg border border-[#4A4A4A]/30 bg-white px-3 text-sm text-[#383737] outline-none transition focus:border-[#FF9D00]"
         />
       </div>
 
