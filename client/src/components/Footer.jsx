@@ -1,4 +1,4 @@
-import { BusFront } from "lucide-react";
+import assets from "../assets/assets";
 
 const footerGroups = [
   {
@@ -34,10 +34,7 @@ const Footer = () => {
         <div className="footer-main">
           <div className="footer-brand">
             <a className="footer-logo" href="#" aria-label="SajiloBus home">
-              <span className="footer-logo-mark" aria-hidden="true">
-                <BusFront size={26} strokeWidth={2.1} />
-              </span>
-              <span>SajiloBus</span>
+              <img src={assets.SvgLogoWithText} className="h-20 px-0 mx-0" />
             </a>
             <p>
               Simple route-based commuting for people who want a more

@@ -25,3 +25,5 @@ const routeSchema = new mongoose.Schema({
   },
 
 })
+
+module.exports = mongoose.model('busRoute', routeSchema)

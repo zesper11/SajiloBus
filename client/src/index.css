@@ -420,8 +420,8 @@ input:focus-visible {
 
 .site-footer {
   width: 100%;
-  background: #171717;
-  color: #fff;
+  background: #ececea00;
+  /* color: #fff; */
 }
 
 .footer-content {
@@ -441,29 +441,9 @@ input:focus-visible {
   max-width: 300px;
 }
 
-.footer-logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  font-size: 1.42rem;
-  font-weight: 750;
-  letter-spacing: -0.045em;
-}
-
-.footer-logo-mark {
-  width: 52px;
-  height: 52px;
-  display: grid;
-  place-items: center;
-  border-radius: 15px;
-  background: var(--accent);
-  color: #fff;
-}
-
 .footer-brand p {
   margin: 17px 0 0;
-  color: #aaa;
+  color: var(--secondary);
   font-size: 0.87rem;
   line-height: 1.7;
 }
@@ -483,13 +463,13 @@ input:focus-visible {
 }
 
 .footer-link-group a {
-  color: #aaa;
+  color: var(--secondary);
   font-size: 0.86rem;
   transition: color 160ms ease;
 }
 
 .footer-link-group a:hover {
-  color: #fff;
+  color: var(--background);
 }
 
 .footer-bottom {
@@ -497,8 +477,8 @@ input:focus-visible {
   justify-content: space-between;
   gap: 20px;
   padding-top: 22px;
-  border-top: 1px solid #383838;
-  color: #888;
+  border-top: 3px solid var(--accent);
+  color: var(--secondary);
   font-size: 0.75rem;
 }
 
